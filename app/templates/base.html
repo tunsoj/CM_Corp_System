@@ -1,0 +1,7 @@
+<!doctype html>
+<html style="background:#050505;color:#0f0;font-family:monospace;">
+<body style="text-align:center;padding-top:50px;">
+<h1>CM CORP</h1>
+{% with m=get_flashed_messages() %}{% if m %}<p>{{m[0]}}</p>{% endif %}{% endwith %}
+{% block content %}{% endblock %}
+</body></html>

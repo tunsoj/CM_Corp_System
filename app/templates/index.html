@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">{{ form.hidden_tag() }}{{ form.name(placeholder="NAMN") }}{{ form.email(placeholder="EMAIL") }}{{ form.role(placeholder="ROLL") }}{{ form.submit() }}</form>
+<a href="/login">ADMIN</a>
+{% endblock %}

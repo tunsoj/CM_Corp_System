@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<table>{% for s in subs %}<tr><td>{{s.email}}</td><td><a href="/delete/{{s.id}}">[X]</a></td></tr>{% endfor %}</table>
+<a href="/">LOG OUT</a>
+{% endblock %}
